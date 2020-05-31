@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SUPERHERO API</title>
+	<link rel="stylesheet" type="text/css" href="superherohome.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ -->
+</head>
+<body>
+	<header>
+
+            <ul id="header_list" class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#" data-value="home"> <h3>Home</h3> </a>
+                </li>
+                <li>
+                    <a href="superfavourites.html" data-value="about"> <h3>Favourites</h3> </a>
+                </li>
+                <li>
+                    <a href="#" data-value="skills"> <h3>Contact</h3> </a>
+                </li>
+                
+            </ul>
+		<div><h1>SUPERHEROS.COM</h1></div>
+	</header>
+	<main>
+		<div class="search">
+				<div class="search-form">
+					<input id="searchbox" type="text"  placeholder="Hey Ninja, search here your favourite superhero">
+					<button id="searchbutton" onclick="clickfunction()">SEARCH</button>
+				</div>
+			</div>
+		<div id= "main_div">
+			<div class="superhero_card">
+				
+				<a onclick='profilefunc(69)'   href="superprofile.html" >
+					<div class="super_image"><img src="https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg">
+					</div>
+				</a>
+				<div class="card_details">
+					<div class="name"><p>BATMAN</p></div>
+					<div id="favourite" onclick="heartButtonClick(this,'69','https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg')"><i  class="fa far fa-heart"></i></div>	
+				</div>
+			</div>
+		</div>	
+	</main>
+<script type="text/javascript" src="superscript.js"></script>
+
+</body>
+</html>
