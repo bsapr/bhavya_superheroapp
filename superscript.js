@@ -10,8 +10,8 @@ var  super_id=null;
 //function for heart buttom
    function heartButtonClick(x,name,imageurl) {
     x.classList.toggle("favourite_red");
-    if(localStorage.getItem(name)!='null')
-    {
+    if(localStorage.getItem(name)==null)
+    {   console.log("adding in local storae");
     	localStorage.setItem(name, imageurl);
     }
     else
